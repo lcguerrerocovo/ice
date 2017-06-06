@@ -136,7 +136,7 @@ public class BasicReservationService extends Poller implements ReservationServic
     }
 
     private void pollAPI() throws Exception {
-        long currentTime = new DateMidnight().getMillis();
+        /*long currentTime = new DateMidnight().getMillis();
 
         DescribeReservedInstancesOfferingsRequest req =  new DescribeReservedInstancesOfferingsRequest()
                 .withFilters(new com.amazonaws.services.ec2.model.Filter().withName("marketplace").withValues("false"));
@@ -197,7 +197,7 @@ public class BasicReservationService extends Poller implements ReservationServic
                     out.close();
                 }
             }
-        }
+        }*/
     }
 
     private UsageType getUsageType(String type, String productDescription) {
